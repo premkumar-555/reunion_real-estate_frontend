@@ -9,11 +9,11 @@ const NavBar = () => {
   return (
     <Box h='70px' w='100%' pos='absolute' top='0' left='0' right='0' bg='#81E6D9' px={['15px', '50px', '75px']}
     display='flex' justifyContent='space-between' alignItems='center'>
-     <FlexItem>
+     <FlexItem spacing="10px">
      <AvatarElement name='home logo' source={HomeLogo}/>
      <TxtItem _hover={{cursor: 'pointer'}}>Home</TxtItem>
      </FlexItem>
-     <FlexItem>
+     <FlexItem spacing="5px">
     <Btn colorScheme='#90CDF4'>Login</Btn>
     <Btn colorScheme='#EBF8FF'>Signup</Btn>
      </FlexItem>
