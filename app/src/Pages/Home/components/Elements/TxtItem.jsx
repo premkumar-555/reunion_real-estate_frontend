@@ -1,9 +1,9 @@
 import React from 'react'
 import { Text  } from '@chakra-ui/react'
 
-const TxtItem = ({children, _hover}) => {
+const TxtItem = ({children, _hover, as}) => {
   return (
-    <Text fontSize={['sm', 'md' , 'lg']} as='b' _hover={_hover}>{children}</Text>
+    <Text fontSize={['sm', 'md' , 'lg']} fontWeight={as} _hover={_hover}>{children}</Text>
   )
 }
 
