@@ -7,6 +7,8 @@ import FilterBar from '../components/Elements/FilterBar'
 import ApplyBtn from '../components/Elements/applyBtn'
 import LocationDropdown from './Elements/LocationDropdown'
 import DateDropdown from './Elements/DateDropdown'
+import PriceRange from './Elements/PriceRange'
+import PropTypeDropDown from './Elements/PropTypeDropDown'
 const Filters = () => {
   return (
     <Box h={['auto', 'auto', '55px']} maxW='100%' display='flex' justifyContent={['flex-start', 'space-evenly', 'space-between']} alignItems='center' my='20px' flexWrap={['wrap', 'wrap', 'no-wrap']}
@@ -29,14 +31,17 @@ const Filters = () => {
      </FilterItem>
      <FilterItem>
     <FltrTxtUp>Price</FltrTxtUp>
-    <FltrTxtDown>Select Price Range</FltrTxtDown>
+    <Box w={['75px', '150px', '250px']} display='flex' justifyContent='flex-start' alignItems='center'>
+      <PriceRange />
+    </Box>
+    {/* <FltrTxtDown>Select Price Range</FltrTxtDown> */}
      </FilterItem>
      <FilterItem>
      <FilterBar />
      </FilterItem>
      <FilterItem>
     <FltrTxtUp>Property Type</FltrTxtUp>
-    <FltrTxtDown>Select Property Type</FltrTxtDown>
+    <PropTypeDropDown />
      </FilterItem>
      <FilterItem>
      <FilterBar />
