@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button  } from '@chakra-ui/react'
-const Btn = ({ children, colorScheme}) => {
+const Btn = ({ children, colorScheme, clickEvent}) => {
   return (
     <Button bg={colorScheme} size={['xs', 'sm']} border='none'>
     {children}
