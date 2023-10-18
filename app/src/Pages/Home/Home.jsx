@@ -18,7 +18,17 @@ const Home = () => {
         <Filters/>
         <CardContainer>
           {properties.length ? properties.map((ele) => (
+            <>
             <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            <PropertyCard key={ele?.city} data={ele}/>
+            </>
           )) : null}
         </CardContainer>
         </ContentCover>
