@@ -24,6 +24,7 @@ const PriceRange = () => {
         placement='top'
         isOpen={showTooltip}
         label={`${sliderMinValue}K`}
+        fontSize={['12px', '14px', '16px']}
         borderRadius='xl'
       >
   <RangeSliderThumb index={0} />
@@ -35,6 +36,7 @@ const PriceRange = () => {
         placement='top'
         isOpen={showTooltip}
         label={`${sliderMaxValue}K`}
+        fontSize={['12px', '14px', '16px']}
         borderRadius='xl'
       >
   <RangeSliderThumb index={1} />
