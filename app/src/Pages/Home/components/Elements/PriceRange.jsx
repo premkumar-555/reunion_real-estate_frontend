@@ -8,7 +8,7 @@ import {
 } from '@chakra-ui/react'
 const PriceRange = () => {
   const [sliderMinValue, setsliderMinValue] = React.useState(0)
-  const [sliderMaxValue, setsliderMaxValue] = React.useState(0)
+  const [sliderMaxValue, setsliderMaxValue] = React.useState(50)
   const [showTooltip, setShowTooltip] = React.useState(false)
   return (
     <RangeSlider onChange={(v) => {setsliderMinValue(v[0]); setsliderMaxValue(v[1])}} aria-label={['min', 'max']} defaultValue={[0, 1000]}
@@ -21,11 +21,10 @@ const PriceRange = () => {
         hasArrow
         bg='blue.500'
         color='white'
-        placement='top'
+        placement='bottom'
         isOpen={showTooltip}
         label={`${sliderMinValue}K`}
         fontSize={['12px', '14px', '16px']}
-        borderRadius='xl'
       >
   <RangeSliderThumb index={0} />
       </Tooltip>
@@ -33,11 +32,10 @@ const PriceRange = () => {
         hasArrow
         bg='blue.500'
         color='white'
-        placement='top'
+        placement='bottom'
         isOpen={showTooltip}
         label={`${sliderMaxValue}K`}
         fontSize={['12px', '14px', '16px']}
-        borderRadius='xl'
       >
   <RangeSliderThumb index={1} />
       </Tooltip>
