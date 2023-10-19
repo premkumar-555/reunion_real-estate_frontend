@@ -11,7 +11,7 @@ import PriceRange from './Elements/PriceRange'
 import PropTypeDropDown from './Elements/PropTypeDropDown'
 const Filters = () => {
   return (
-    <Box h={['auto', 'auto', '55px']} maxW='100%' display='flex' justifyContent={['space-evenly', 'space-evenly', 'space-between']} alignItems='center' my='20px' flexWrap={['wrap', 'wrap', 'no-wrap']}
+    <Box h={['15%', '10%', '5%']} maxW='100%' display='flex' justifyContent={['space-evenly', 'space-evenly', 'space-between']} alignItems='center' my='20px' flexWrap={['wrap', 'wrap', 'no-wrap']}
     bg='#E2E8F0' borderRadius='xl' px='15px' py='10px'>
      <FilterItem>
     <FltrTxtUp>City</FltrTxtUp>
